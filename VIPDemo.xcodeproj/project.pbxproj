@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		121C0C81DAA5DF9832C4F136 /* Pods_VIPDemo_VIPDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84ED777E320E1D860A9C893 /* Pods_VIPDemo_VIPDemoUITests.framework */; };
+		2025C03B23ACDD9869689656 /* Pods_VIPDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2E7D0D723C6571AE26F193 /* Pods_VIPDemo.framework */; };
+		2E7BCE0C87155B73361E2D7A /* Pods_VIPDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1180F7F79CAB0572D4A4A87C /* Pods_VIPDemoTests.framework */; };
+		70243F4E2781549A00B45DDA /* VIPFinanceApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F4B2781549A00B45DDA /* VIPFinanceApi.framework */; };
+		70243F4F2781549A00B45DDA /* VIPFinanceApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F4B2781549A00B45DDA /* VIPFinanceApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70243F502781549A00B45DDA /* VIPSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F4C2781549A00B45DDA /* VIPSocial.framework */; };
+		70243F512781549A00B45DDA /* VIPSocial.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F4C2781549A00B45DDA /* VIPSocial.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70243F522781549A00B45DDA /* VIPSocialApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F4D2781549A00B45DDA /* VIPSocialApi.framework */; };
+		70243F532781549A00B45DDA /* VIPSocialApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F4D2781549A00B45DDA /* VIPSocialApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		709214F12763AFC600B2EAE5 /* VIPFinance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709214F02763AFC600B2EAE5 /* VIPFinance.framework */; };
+		709214F22763AFC700B2EAE5 /* VIPFinance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 709214F02763AFC600B2EAE5 /* VIPFinance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7092152D2764E26400B2EAE5 /* VIPCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7092152C2764E26400B2EAE5 /* VIPCore.framework */; };
+		7092152E2764E26400B2EAE5 /* VIPCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7092152C2764E26400B2EAE5 /* VIPCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70C2C0CD275F7872006AEBBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C2C0CC275F7872006AEBBB /* AppDelegate.swift */; };
+		70C2C0D6275F7872006AEBBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C2C0D5275F7872006AEBBB /* Assets.xcassets */; };
+		70C2C0D9275F7872006AEBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C2C0D7275F7872006AEBBB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70C2C0E0275F7873006AEBBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70C2C0C1275F7872006AEBBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C2C0C8275F7872006AEBBB;
+			remoteInfo = VIPDemo;
+		};
+		70C2C0EA275F7873006AEBBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70C2C0C1275F7872006AEBBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70C2C0C8275F7872006AEBBB;
+			remoteInfo = VIPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		709214F32763AFC700B2EAE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				709214F22763AFC700B2EAE5 /* VIPFinance.framework in Embed Frameworks */,
+				70243F512781549A00B45DDA /* VIPSocial.framework in Embed Frameworks */,
+				7092152E2764E26400B2EAE5 /* VIPCore.framework in Embed Frameworks */,
+				70243F532781549A00B45DDA /* VIPSocialApi.framework in Embed Frameworks */,
+				70243F4F2781549A00B45DDA /* VIPFinanceApi.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1180F7F79CAB0572D4A4A87C /* Pods_VIPDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		137A4297F98EF526A7A543CE /* Pods-VIPDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-VIPDemoTests/Pods-VIPDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A7033648B6E74743A0B93F5 /* Pods-VIPDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPDemoTests.release.xcconfig"; path = "Target Support Files/Pods-VIPDemoTests/Pods-VIPDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E2E7D0D723C6571AE26F193 /* Pods_VIPDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		650A66FA714BD92C6D4AE2AD /* Pods-VIPDemo-VIPDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPDemo-VIPDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-VIPDemo-VIPDemoUITests/Pods-VIPDemo-VIPDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70243F4B2781549A00B45DDA /* VIPFinanceApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPFinanceApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70243F4C2781549A00B45DDA /* VIPSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70243F4D2781549A00B45DDA /* VIPSocialApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPSocialApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		709214F02763AFC600B2EAE5 /* VIPFinance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPFinance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7092152C2764E26400B2EAE5 /* VIPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C2C0C9275F7872006AEBBB /* VIPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C2C0CC275F7872006AEBBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70C2C0D5275F7872006AEBBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70C2C0D8275F7872006AEBBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70C2C0DA275F7872006AEBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C2C0DF275F7873006AEBBB /* VIPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C2C0E9275F7873006AEBBB /* VIPDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEAD7A188E0E6C29585B2FA /* Pods-VIPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPDemo.debug.xcconfig"; path = "Target Support Files/Pods-VIPDemo/Pods-VIPDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A67C0D3AC4A2A675AEEC5BDF /* Pods-VIPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPDemo.release.xcconfig"; path = "Target Support Files/Pods-VIPDemo/Pods-VIPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B84ED777E320E1D860A9C893 /* Pods_VIPDemo_VIPDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPDemo_VIPDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38A993F49E5B531FAF7FEF2 /* Pods-VIPDemo-VIPDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPDemo-VIPDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VIPDemo-VIPDemoUITests/Pods-VIPDemo-VIPDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70C2C0C6275F7872006AEBBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70243F4E2781549A00B45DDA /* VIPFinanceApi.framework in Frameworks */,
+				709214F12763AFC600B2EAE5 /* VIPFinance.framework in Frameworks */,
+				7092152D2764E26400B2EAE5 /* VIPCore.framework in Frameworks */,
+				2025C03B23ACDD9869689656 /* Pods_VIPDemo.framework in Frameworks */,
+				70243F522781549A00B45DDA /* VIPSocialApi.framework in Frameworks */,
+				70243F502781549A00B45DDA /* VIPSocial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C2C0DC275F7873006AEBBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7BCE0C87155B73361E2D7A /* Pods_VIPDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C2C0E6275F7873006AEBBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121C0C81DAA5DF9832C4F136 /* Pods_VIPDemo_VIPDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2460CEF8EFF68C01F63E858F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EEAD7A188E0E6C29585B2FA /* Pods-VIPDemo.debug.xcconfig */,
+				A67C0D3AC4A2A675AEEC5BDF /* Pods-VIPDemo.release.xcconfig */,
+				D38A993F49E5B531FAF7FEF2 /* Pods-VIPDemo-VIPDemoUITests.debug.xcconfig */,
+				650A66FA714BD92C6D4AE2AD /* Pods-VIPDemo-VIPDemoUITests.release.xcconfig */,
+				137A4297F98EF526A7A543CE /* Pods-VIPDemoTests.debug.xcconfig */,
+				2A7033648B6E74743A0B93F5 /* Pods-VIPDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		70C2C0C0275F7872006AEBBB = {
+			isa = PBXGroup;
+			children = (
+				70C2C0CB275F7872006AEBBB /* VIPDemo */,
+				70C2C0CA275F7872006AEBBB /* Products */,
+				7E39591ED8B0E13051D54375 /* Frameworks */,
+				2460CEF8EFF68C01F63E858F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		70C2C0CA275F7872006AEBBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70C2C0C9275F7872006AEBBB /* VIPDemo.app */,
+				70C2C0DF275F7873006AEBBB /* VIPDemoTests.xctest */,
+				70C2C0E9275F7873006AEBBB /* VIPDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70C2C0CB275F7872006AEBBB /* VIPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				70C2C0CC275F7872006AEBBB /* AppDelegate.swift */,
+				70C2C0D5275F7872006AEBBB /* Assets.xcassets */,
+				70C2C0D7275F7872006AEBBB /* LaunchScreen.storyboard */,
+				70C2C0DA275F7872006AEBBB /* Info.plist */,
+			);
+			path = VIPDemo;
+			sourceTree = "<group>";
+		};
+		7E39591ED8B0E13051D54375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70243F4B2781549A00B45DDA /* VIPFinanceApi.framework */,
+				70243F4C2781549A00B45DDA /* VIPSocial.framework */,
+				70243F4D2781549A00B45DDA /* VIPSocialApi.framework */,
+				7092152C2764E26400B2EAE5 /* VIPCore.framework */,
+				709214F02763AFC600B2EAE5 /* VIPFinance.framework */,
+				5E2E7D0D723C6571AE26F193 /* Pods_VIPDemo.framework */,
+				B84ED777E320E1D860A9C893 /* Pods_VIPDemo_VIPDemoUITests.framework */,
+				1180F7F79CAB0572D4A4A87C /* Pods_VIPDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70C2C0C8275F7872006AEBBB /* VIPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C2C0F3275F7873006AEBBB /* Build configuration list for PBXNativeTarget "VIPDemo" */;
+			buildPhases = (
+				59A84CED532DAFC0750AEEDC /* [CP] Check Pods Manifest.lock */,
+				70C2C0C5275F7872006AEBBB /* Sources */,
+				70C2C0C6275F7872006AEBBB /* Frameworks */,
+				70C2C0C7275F7872006AEBBB /* Resources */,
+				709214F32763AFC700B2EAE5 /* Embed Frameworks */,
+				D63BB8E8253D211BC365B563 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPDemo;
+			productName = VIPDemo;
+			productReference = 70C2C0C9275F7872006AEBBB /* VIPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70C2C0DE275F7873006AEBBB /* VIPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C2C0F6275F7873006AEBBB /* Build configuration list for PBXNativeTarget "VIPDemoTests" */;
+			buildPhases = (
+				51BF37306526E0908773D1C9 /* [CP] Check Pods Manifest.lock */,
+				70C2C0DB275F7873006AEBBB /* Sources */,
+				70C2C0DC275F7873006AEBBB /* Frameworks */,
+				70C2C0DD275F7873006AEBBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70C2C0E1275F7873006AEBBB /* PBXTargetDependency */,
+			);
+			name = VIPDemoTests;
+			productName = VIPDemoTests;
+			productReference = 70C2C0DF275F7873006AEBBB /* VIPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70C2C0E8275F7873006AEBBB /* VIPDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70C2C0F9275F7873006AEBBB /* Build configuration list for PBXNativeTarget "VIPDemoUITests" */;
+			buildPhases = (
+				B5AFCA6FFC2865C0863B16D8 /* [CP] Check Pods Manifest.lock */,
+				70C2C0E5275F7873006AEBBB /* Sources */,
+				70C2C0E6275F7873006AEBBB /* Frameworks */,
+				70C2C0E7275F7873006AEBBB /* Resources */,
+				FA71137508E52DDCC64B95C9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70C2C0EB275F7873006AEBBB /* PBXTargetDependency */,
+			);
+			name = VIPDemoUITests;
+			productName = VIPDemoUITests;
+			productReference = 70C2C0E9275F7873006AEBBB /* VIPDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70C2C0C1275F7872006AEBBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					70C2C0C8275F7872006AEBBB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					70C2C0DE275F7873006AEBBB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 70C2C0C8275F7872006AEBBB;
+					};
+					70C2C0E8275F7873006AEBBB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 70C2C0C8275F7872006AEBBB;
+					};
+				};
+			};
+			buildConfigurationList = 70C2C0C4275F7872006AEBBB /* Build configuration list for PBXProject "VIPDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70C2C0C0275F7872006AEBBB;
+			productRefGroup = 70C2C0CA275F7872006AEBBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70C2C0C8275F7872006AEBBB /* VIPDemo */,
+				70C2C0DE275F7873006AEBBB /* VIPDemoTests */,
+				70C2C0E8275F7873006AEBBB /* VIPDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70C2C0C7275F7872006AEBBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C2C0D9275F7872006AEBBB /* LaunchScreen.storyboard in Resources */,
+				70C2C0D6275F7872006AEBBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C2C0DD275F7873006AEBBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C2C0E7275F7873006AEBBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51BF37306526E0908773D1C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A84CED532DAFC0750AEEDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5AFCA6FFC2865C0863B16D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPDemo-VIPDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D63BB8E8253D211BC365B563 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPDemo/Pods-VIPDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPDemo/Pods-VIPDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPDemo/Pods-VIPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA71137508E52DDCC64B95C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPDemo-VIPDemoUITests/Pods-VIPDemo-VIPDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPDemo-VIPDemoUITests/Pods-VIPDemo-VIPDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPDemo-VIPDemoUITests/Pods-VIPDemo-VIPDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70C2C0C5275F7872006AEBBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C2C0CD275F7872006AEBBB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C2C0DB275F7873006AEBBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C2C0E5275F7873006AEBBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70C2C0E1275F7873006AEBBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C2C0C8275F7872006AEBBB /* VIPDemo */;
+			targetProxy = 70C2C0E0275F7873006AEBBB /* PBXContainerItemProxy */;
+		};
+		70C2C0EB275F7873006AEBBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70C2C0C8275F7872006AEBBB /* VIPDemo */;
+			targetProxy = 70C2C0EA275F7873006AEBBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70C2C0D7275F7872006AEBBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70C2C0D8275F7872006AEBBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70C2C0F1275F7873006AEBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70C2C0F2275F7873006AEBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70C2C0F4275F7873006AEBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEAD7A188E0E6C29585B2FA /* Pods-VIPDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R45A6XC35J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIPDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arimunandar.VIPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70C2C0F5275F7873006AEBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A67C0D3AC4A2A675AEEC5BDF /* Pods-VIPDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R45A6XC35J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VIPDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arimunandar.VIPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70C2C0F7275F7873006AEBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137A4297F98EF526A7A543CE /* Pods-VIPDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arimunandar.VIPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPDemo.app/VIPDemo";
+			};
+			name = Debug;
+		};
+		70C2C0F8275F7873006AEBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7033648B6E74743A0B93F5 /* Pods-VIPDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arimunandar.VIPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPDemo.app/VIPDemo";
+			};
+			name = Release;
+		};
+		70C2C0FA275F7873006AEBBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38A993F49E5B531FAF7FEF2 /* Pods-VIPDemo-VIPDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arimunandar.VIPDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPDemo;
+			};
+			name = Debug;
+		};
+		70C2C0FB275F7873006AEBBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650A66FA714BD92C6D4AE2AD /* Pods-VIPDemo-VIPDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arimunandar.VIPDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VIPDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70C2C0C4275F7872006AEBBB /* Build configuration list for PBXProject "VIPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C2C0F1275F7873006AEBBB /* Debug */,
+				70C2C0F2275F7873006AEBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C2C0F3275F7873006AEBBB /* Build configuration list for PBXNativeTarget "VIPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C2C0F4275F7873006AEBBB /* Debug */,
+				70C2C0F5275F7873006AEBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C2C0F6275F7873006AEBBB /* Build configuration list for PBXNativeTarget "VIPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C2C0F7275F7873006AEBBB /* Debug */,
+				70C2C0F8275F7873006AEBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70C2C0F9275F7873006AEBBB /* Build configuration list for PBXNativeTarget "VIPDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70C2C0FA275F7873006AEBBB /* Debug */,
+				70C2C0FB275F7873006AEBBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70C2C0C1275F7872006AEBBB /* Project object */;
+}

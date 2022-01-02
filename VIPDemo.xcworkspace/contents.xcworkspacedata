@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Frameworks/VIPSocialApi/VIPSocialApi.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/VIPSocial/VIPSocial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/VIPFinanceApi/VIPFinanceApi.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/VIPCore/VIPCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Frameworks/VIPFinance/VIPFinance.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VIPDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
