@@ -23,8 +23,8 @@ class TransactionAssembly: Assembly {
         }.inObjectScope(.transient)
 
         container.register(ITransactionInteractor.self) { (r, view: ITransactionViewController) in
-            let presenter = r.resolve(ITransactionPresenter.self, argument: view)
-            let manager = r.resolve(ITransactionManager.self)
+            let presenter = r.resolve(ITransactionPresenter.self, argument: view)!
+            let manager = r.resolve(ITransactionManager.self)!
             let interactor = TransactionInteractor(presenter: presenter, manager: manager)
             return interactor
         }.inObjectScope(.transient)
@@ -37,8 +37,8 @@ class TransactionAssembly: Assembly {
         container.register(TransactionViewController.self) { (r, appRouter: IAppRouter) in
             let bundle = Bundle(for: type(of: self))
             let view = TransactionViewController(nibName: "TransactionViewController", bundle: bundle)
-            let interactor = r.resolve(ITransactionInteractor.self, argument: view as ITransactionViewController)
-            let wireframe = r.resolve(ITransactionWireframe.self, argument: appRouter)
+            let interactor = r.resolve(ITransactionInteractor.self, argument: view as ITransactionViewController)!
+            let wireframe = r.resolve(ITransactionWireframe.self, argument: appRouter)!
             view.interactor = interactor
             view.wireframe = wireframe
             return view

@@ -16,9 +16,9 @@ protocol IDetailPresenter: AnyObject {
 // MARK: - DetailPresenter
 
 class DetailPresenter: IDetailPresenter {
-    weak var view: IDetailViewController?
+    weak var view: IDetailViewController!
 
-    init(view: IDetailViewController?) {
+    init(view: IDetailViewController!) {
         self.view = view
     }
 }

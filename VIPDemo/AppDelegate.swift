@@ -9,6 +9,9 @@ import Swinject
 import UIKit
 import VIPCore
 import VIPFinance
+import VIPSocial
+import VIPSocialApi
+import VIPFinanceApi
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,11 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         let products: [String: (_ appRouter: IAppRouter) -> IAppProductRouter] = [
-            AppProducts.VIPFinanceProducts.productName: { VIPFinanceRouters(router: $0) }
+            AppProducts.VIPFinanceProducts.productName: { VIPFinanceRouters(router: $0) },
+            AppProducts.VIPSocialProducts.productName: { VIPSocialRouters(router: $0) }
         ]
+        
+        var assemblies: [Assembly] = []
+        assemblies.append(contentsOf: VIPFinanceRouters.getAssemblies())
+        assemblies.append(contentsOf: VIPSocialRouters.getAssemblies())
 
-        AppRouter.setAppRouter(products: products, assemblies: VIPFinanceRouters.getAssemblies())
-        AppRouter.shared.presentModule(module: VIPFinanceProducts.HomeModule, presentType: .root)
+        AppRouter.setAppRouter(products: products, assemblies: VIPSocialRouters.getAssemblies())
+        AppRouter.shared.presentModule(module: VIPSocialProducts.SocialHomeModule, presentType: .root)
         return true
     }
 }

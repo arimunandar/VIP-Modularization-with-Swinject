@@ -8,10 +8,16 @@
 import UIKit
 import VIPCore
 
+// MARK: - HomeViewControllerDelegate
+
+protocol HomeViewControllerDelegate: AnyObject {
+    func didSetupNewTitleLabel(text: String?)
+}
+
 // MARK: - IHomeWireframe
 
 protocol IHomeWireframe {
-    func presentView()
+    func presentView(viewController: HomeViewController)
     func navigateToDetail()
 }
 
@@ -19,35 +25,27 @@ protocol IHomeWireframe {
 
 class HomeWireframe: IHomeWireframe {
     var appRouter: IAppRouter
+    weak var delegate: HomeViewControllerDelegate?
 
-    init(appRouter: IAppRouter) {
+    init(appRouter: IAppRouter, delegate: HomeViewControllerDelegate) {
         self.appRouter = appRouter
+        self.delegate = delegate
     }
 
-    func presentView() {
-        let view = appRouter.resolver.resolve(HomeViewController.self, argument: appRouter)!
-        appRouter.presentView(view: view)
+    func presentView(viewController: HomeViewController) {
+        appRouter.presentView(view: viewController)
     }
 
     func navigateToDetail() {
         appRouter.presentModule(module: VIPFinanceProducts.DetailModule, onDismiss: { [weak self] parameter in
-            print(parameter)
-            if let x = parameter {
-                
+            if let x = parameter as? HomeCallbackParameter {
+                switch x.from {
+                case .fromTransaction:
+                    self?.delegate?.didSetupNewTitleLabel(text: x.name)
+                case .fromDetail:
+                    self?.delegate?.didSetupNewTitleLabel(text: x.name)
+                }
             }
-            
-//            switch fromModule {
-//            case VIPFinanceProducts.DetailModule:
-//                if let param = parameter as? HomeCallbackParameter {
-//                    print(param.name, param.fromModule)
-//                }
-//            case VIPFinanceProducts.TransactionModule:
-//                if let param = parameter as? HomeCallbackParameter {
-//                    print(param.name, param.fromModule)
-//                }
-//            default:
-//                break
-//            }
         })
     }
 }

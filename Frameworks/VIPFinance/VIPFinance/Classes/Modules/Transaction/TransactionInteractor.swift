@@ -16,10 +16,10 @@ protocol ITransactionInteractor: AnyObject {
 // MARK: - TransactionInteractor
 
 class TransactionInteractor: ITransactionInteractor {
-    var manager: ITransactionManager?
-    var presenter: ITransactionPresenter?
+    var manager: ITransactionManager!
+    var presenter: ITransactionPresenter!
 
-    init(presenter: ITransactionPresenter?, manager: ITransactionManager?) {
+    init(presenter: ITransactionPresenter!, manager: ITransactionManager!) {
         self.presenter = presenter
         self.manager = manager
     }

@@ -20,7 +20,7 @@ class HomeInteractor: IHomeInteractor {
     var manager: IHomeManager!
     var presenter: IHomePresenter!
 
-    init(presenter: IHomePresenter!, manager: IHomeManager!) {
+    init(presenter: IHomePresenter, manager: IHomeManager) {
         self.presenter = presenter
         self.manager = manager
     }

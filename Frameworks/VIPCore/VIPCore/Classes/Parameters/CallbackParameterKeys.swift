@@ -9,4 +9,5 @@ import Foundation
 
 public enum CallbackParameterKeys: String {
     case fromTransaction
+    case fromDetail
 }

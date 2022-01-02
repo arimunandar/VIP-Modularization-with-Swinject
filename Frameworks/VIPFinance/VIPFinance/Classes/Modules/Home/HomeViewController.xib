@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="VIPFinance" customModuleProvider="target">
             <connections>
+                <outlet property="titleLabel" destination="YrS-YT-1jn" id="JZW-I9-qpd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,14 +57,23 @@
                         </button>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrS-YT-1jn">
+                    <rect key="frame" x="16" y="76" width="343" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="YrS-YT-1jn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="5a6-2O-WxU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YrS-YT-1jn" secondAttribute="trailing" constant="16" id="RPi-Qe-sb4"/>
                 <constraint firstItem="d08-kn-P2F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cWJ-9P-aJt"/>
                 <constraint firstItem="d08-kn-P2F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="d9l-aG-Tym"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d08-kn-P2F" secondAttribute="trailing" constant="32" id="fVX-EO-oQC"/>
                 <constraint firstItem="d08-kn-P2F" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gQe-Lj-S8f"/>
+                <constraint firstItem="YrS-YT-1jn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="z7S-Er-bEs"/>
             </constraints>
             <point key="canvasLocation" x="140" y="153"/>
         </view>

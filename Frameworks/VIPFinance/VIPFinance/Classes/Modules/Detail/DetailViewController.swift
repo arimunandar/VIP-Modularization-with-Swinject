@@ -17,8 +17,8 @@ protocol IDetailViewController: AnyObject {
 // MARK: - DetailViewController
 
 class DetailViewController: UIViewController {
-    var interactor: IDetailInteractor?
-    var wireframe: IDetailWireframe?
+    var interactor: IDetailInteractor!
+    var wireframe: IDetailWireframe!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,11 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func didShowTransaction(_ sender: UIButton) {
-        wireframe?.navigateToTransaction()
+        wireframe.navigateToTransaction()
     }
     
     @IBAction func didPopDetail(_ sender: UIButton) {
-        wireframe?.didPop()
+        wireframe.didPop()
     }
 }
 

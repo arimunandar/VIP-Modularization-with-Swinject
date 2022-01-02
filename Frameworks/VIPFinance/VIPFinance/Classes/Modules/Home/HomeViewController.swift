@@ -19,6 +19,8 @@ public class HomeViewController: UIViewController {
     var interactor: IHomeInteractor!
     var wireframe: IHomeWireframe!
 
+    @IBOutlet weak var titleLabel: UILabel!
+
     override public func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -40,4 +42,12 @@ public class HomeViewController: UIViewController {
 
 extension HomeViewController: IHomeViewController {
     // do someting...
+}
+
+// MARK: HomeViewControllerDelegate
+
+extension HomeViewController: HomeViewControllerDelegate {
+    func didSetupNewTitleLabel(text: String?) {
+        titleLabel.text = text
+    }
 }

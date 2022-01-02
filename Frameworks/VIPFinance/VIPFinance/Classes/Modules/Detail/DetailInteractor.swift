@@ -17,11 +17,11 @@ protocol IDetailInteractor: AnyObject {
 // MARK: - DetailInteractor
 
 class DetailInteractor: IDetailInteractor {
-    var manager: IDetailManager?
-    var presenter: IDetailPresenter?
+    var manager: IDetailManager!
+    var presenter: IDetailPresenter!
     var parameters: DetailModuleParameter?
 
-    init(presenter: IDetailPresenter?, manager: IDetailManager?) {
+    init(presenter: IDetailPresenter, manager: IDetailManager) {
         self.presenter = presenter
         self.manager = manager
     }

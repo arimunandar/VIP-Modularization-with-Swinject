@@ -20,6 +20,7 @@
 		70243EC8277F1B7900B45DDA /* Extension+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70243EC7277F1B7900B45DDA /* Extension+UINavigationController.swift */; };
 		70243ECA277F1BCA00B45DDA /* Extension+AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70243EC9277F1BCA00B45DDA /* Extension+AppRouter.swift */; };
 		70243ECC277F1D3B00B45DDA /* IAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70243ECB277F1D3B00B45DDA /* IAppRouter.swift */; };
+		706B6CAA27818B8300287AAD /* VIPSocialProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6CA927818B8300287AAD /* VIPSocialProducts.swift */; };
 		7081070527664BDF00BB201D /* AppProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708106FD27664BDF00BB201D /* AppProducts.swift */; };
 		7081072827664D3400BB201D /* GeneralProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081072027664D3400BB201D /* GeneralProducts.swift */; };
 		709215172764E20B00B2EAE5 /* VIPCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 709215162764E20B00B2EAE5 /* VIPCore.docc */; };
@@ -56,6 +57,7 @@
 		70243EC7277F1B7900B45DDA /* Extension+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UINavigationController.swift"; sourceTree = "<group>"; };
 		70243EC9277F1BCA00B45DDA /* Extension+AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+AppRouter.swift"; sourceTree = "<group>"; };
 		70243ECB277F1D3B00B45DDA /* IAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppRouter.swift; sourceTree = "<group>"; };
+		706B6CA927818B8300287AAD /* VIPSocialProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPSocialProducts.swift; sourceTree = "<group>"; };
 		708106FD27664BDF00BB201D /* AppProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProducts.swift; sourceTree = "<group>"; };
 		7081072027664D3400BB201D /* GeneralProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralProducts.swift; sourceTree = "<group>"; };
 		709215122764E20B00B2EAE5 /* VIPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VIPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 				708106FD27664BDF00BB201D /* AppProducts.swift */,
 				7081072027664D3400BB201D /* GeneralProducts.swift */,
 				709215472764F32D00B2EAE5 /* VIPFinanceProducts.swift */,
+				706B6CA927818B8300287AAD /* VIPSocialProducts.swift */,
 			);
 			path = VIPProducts;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				70243EBE277DD21600B45DDA /* Extension+UIViewController.swift in Sources */,
 				70E02CB92765CDB8001D00FE /* DetailModuleParameter.swift in Sources */,
 				70243EC6277EE31B00B45DDA /* CallbackParameterKeys.swift in Sources */,
+				706B6CAA27818B8300287AAD /* VIPSocialProducts.swift in Sources */,
 				70243EC0277DD22500B45DDA /* Extension+UIApplication.swift in Sources */,
 				70243EC2277ED99700B45DDA /* AppRouterCallbackParameter.swift in Sources */,
 				70243ECA277F1BCA00B45DDA /* Extension+AppRouter.swift in Sources */,

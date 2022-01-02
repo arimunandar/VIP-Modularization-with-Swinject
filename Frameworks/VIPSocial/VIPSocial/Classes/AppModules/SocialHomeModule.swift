@@ -1,5 +1,5 @@
 //
-//  HomeModule.swift
+//  SocialHomeModule.swift
 //  VIPFinance
 //
 //  Created by Ari Munandar on 11/12/21.
@@ -8,7 +8,7 @@
 import UIKit
 import VIPCore
 
-public class HomeModule: IAppModule {
+public class SocialHomeModule: IAppModule {
     let appRouter: IAppRouter
 
     public init(_ appRouter: IAppRouter) {
@@ -16,13 +16,13 @@ public class HomeModule: IAppModule {
     }
 
     public func presentView(parameters: IAppParameter?) {
-        let view = appRouter.resolver.resolve(HomeViewController.self, argument: appRouter)!
-        let wireframe = appRouter.resolver.resolve(IHomeWireframe.self, arguments: appRouter, view as HomeViewControllerDelegate)!
+        let view = appRouter.resolver.resolve(SocialHomeViewController.self, argument: appRouter)!
+        let wireframe = appRouter.resolver.resolve(ISocialHomeWireframe.self, arguments: appRouter, view as SocialHomeViewControllerDelegate)!
         wireframe.presentView(viewController: view)
     }
 
     public func createView(parameters: IAppParameter?) -> UIViewController {
-        let view = appRouter.resolver.resolve(HomeViewController.self, argument: appRouter)!
+        let view = appRouter.resolver.resolve(SocialHomeViewController.self, argument: appRouter)!
         return view
     }
 }

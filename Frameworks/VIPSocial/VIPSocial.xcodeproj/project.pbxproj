@@ -15,6 +15,16 @@
 		70243F422781546000B45DDA /* VIPCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F3F2781546000B45DDA /* VIPCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		70243F432781546000B45DDA /* VIPSocialApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F402781546000B45DDA /* VIPSocialApi.framework */; };
 		70243F442781546000B45DDA /* VIPSocialApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70243F402781546000B45DDA /* VIPSocialApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		706B6C9227818ACD00287AAD /* VIPSocialRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9127818ACD00287AAD /* VIPSocialRouters.swift */; };
+		706B6C9427818AE700287AAD /* SocialHomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9327818AE700287AAD /* SocialHomeModule.swift */; };
+		706B6CA127818B0B00287AAD /* SocialHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9827818B0B00287AAD /* SocialHomePresenter.swift */; };
+		706B6CA227818B0B00287AAD /* SocialHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9927818B0B00287AAD /* SocialHomeViewController.swift */; };
+		706B6CA327818B0B00287AAD /* SocialHomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9A27818B0B00287AAD /* SocialHomeAssembly.swift */; };
+		706B6CA427818B0B00287AAD /* SocialHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9B27818B0B00287AAD /* SocialHomeInteractor.swift */; };
+		706B6CA527818B0B00287AAD /* SocialHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9C27818B0B00287AAD /* SocialHomeModel.swift */; };
+		706B6CA627818B0B00287AAD /* SocialHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 706B6C9D27818B0B00287AAD /* SocialHomeViewController.xib */; };
+		706B6CA727818B0B00287AAD /* SocialHomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9E27818B0B00287AAD /* SocialHomeManager.swift */; };
+		706B6CA827818B0B00287AAD /* SocialHomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706B6C9F27818B0B00287AAD /* SocialHomeWireframe.swift */; };
 		98A27F93AAECB489AC12DB3B /* Pods_VIPSocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F8A4BBFED141BFE67EA4C1 /* Pods_VIPSocial.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +62,16 @@
 		70243F0A2781542400B45DDA /* VIPSocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPSocialTests.swift; sourceTree = "<group>"; };
 		70243F3F2781546000B45DDA /* VIPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70243F402781546000B45DDA /* VIPSocialApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VIPSocialApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706B6C9127818ACD00287AAD /* VIPSocialRouters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPSocialRouters.swift; sourceTree = "<group>"; };
+		706B6C9327818AE700287AAD /* SocialHomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeModule.swift; sourceTree = "<group>"; };
+		706B6C9827818B0B00287AAD /* SocialHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomePresenter.swift; sourceTree = "<group>"; };
+		706B6C9927818B0B00287AAD /* SocialHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeViewController.swift; sourceTree = "<group>"; };
+		706B6C9A27818B0B00287AAD /* SocialHomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeAssembly.swift; sourceTree = "<group>"; };
+		706B6C9B27818B0B00287AAD /* SocialHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeInteractor.swift; sourceTree = "<group>"; };
+		706B6C9C27818B0B00287AAD /* SocialHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeModel.swift; sourceTree = "<group>"; };
+		706B6C9D27818B0B00287AAD /* SocialHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialHomeViewController.xib; sourceTree = "<group>"; };
+		706B6C9E27818B0B00287AAD /* SocialHomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeManager.swift; sourceTree = "<group>"; };
+		706B6C9F27818B0B00287AAD /* SocialHomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialHomeWireframe.swift; sourceTree = "<group>"; };
 		938AC07C6F7528D4C774DEE7 /* Pods-VIPSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPSocial.release.xcconfig"; path = "Target Support Files/Pods-VIPSocial/Pods-VIPSocial.release.xcconfig"; sourceTree = "<group>"; };
 		F8F8A4BBFED141BFE67EA4C1 /* Pods_VIPSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,6 +131,7 @@
 		70243EFD2781542300B45DDA /* VIPSocial */ = {
 			isa = PBXGroup;
 			children = (
+				706B6C8C27818A7700287AAD /* Classes */,
 				70243EFE2781542300B45DDA /* VIPSocial.h */,
 				70243EFF2781542300B45DDA /* VIPSocial.docc */,
 			);
@@ -133,6 +154,71 @@
 				F8F8A4BBFED141BFE67EA4C1 /* Pods_VIPSocial.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		706B6C8C27818A7700287AAD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9527818AF000287AAD /* Modules */,
+				706B6C9027818AA700287AAD /* Routers */,
+				706B6C8F27818AA000287AAD /* Assemblies */,
+				706B6C8E27818A9900287AAD /* Managers */,
+				706B6C8D27818A9000287AAD /* AppModules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		706B6C8D27818A9000287AAD /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9327818AE700287AAD /* SocialHomeModule.swift */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		706B6C8E27818A9900287AAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9E27818B0B00287AAD /* SocialHomeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		706B6C8F27818AA000287AAD /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9A27818B0B00287AAD /* SocialHomeAssembly.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		706B6C9027818AA700287AAD /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9127818ACD00287AAD /* VIPSocialRouters.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		706B6C9527818AF000287AAD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9627818AF500287AAD /* SocialHome */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		706B6C9627818AF500287AAD /* SocialHome */ = {
+			isa = PBXGroup;
+			children = (
+				706B6C9B27818B0B00287AAD /* SocialHomeInteractor.swift */,
+				706B6C9C27818B0B00287AAD /* SocialHomeModel.swift */,
+				706B6C9827818B0B00287AAD /* SocialHomePresenter.swift */,
+				706B6C9927818B0B00287AAD /* SocialHomeViewController.swift */,
+				706B6C9D27818B0B00287AAD /* SocialHomeViewController.xib */,
+				706B6C9F27818B0B00287AAD /* SocialHomeWireframe.swift */,
+			);
+			path = SocialHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706B6CA627818B0B00287AAD /* SocialHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +358,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706B6CA227818B0B00287AAD /* SocialHomeViewController.swift in Sources */,
+				706B6C9427818AE700287AAD /* SocialHomeModule.swift in Sources */,
+				706B6CA127818B0B00287AAD /* SocialHomePresenter.swift in Sources */,
+				706B6CA727818B0B00287AAD /* SocialHomeManager.swift in Sources */,
 				70243F002781542300B45DDA /* VIPSocial.docc in Sources */,
+				706B6CA427818B0B00287AAD /* SocialHomeInteractor.swift in Sources */,
+				706B6CA327818B0B00287AAD /* SocialHomeAssembly.swift in Sources */,
+				706B6CA827818B0B00287AAD /* SocialHomeWireframe.swift in Sources */,
+				706B6CA527818B0B00287AAD /* SocialHomeModel.swift in Sources */,
+				706B6C9227818ACD00287AAD /* VIPSocialRouters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +575,7 @@
 		70243F132781542400B45DDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -494,6 +591,7 @@
 		70243F142781542400B45DDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

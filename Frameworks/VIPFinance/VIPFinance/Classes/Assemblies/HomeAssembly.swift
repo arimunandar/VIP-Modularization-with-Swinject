@@ -15,13 +15,13 @@ class HomeAssembly: Assembly {
             return HomeManager()
         }.inObjectScope(.transient)
         
-        container.register(IHomeWireframe.self) { (_, appRouter: IAppRouter) in
-            HomeWireframe(appRouter: appRouter)
+        container.register(IHomeWireframe.self) { (_, appRouter: IAppRouter, delegate: HomeViewControllerDelegate) in
+            HomeWireframe(appRouter: appRouter, delegate: delegate)
         }.inObjectScope(.transient)
 
         container.register(IHomeInteractor.self) { (r, view: IHomeViewController) in
-            let presenter = r.resolve(IHomePresenter.self, argument: view)
-            let manager = r.resolve(IHomeManager.self)
+            let presenter = r.resolve(IHomePresenter.self, argument: view)!
+            let manager = r.resolve(IHomeManager.self)!
             let interactor = HomeInteractor(presenter: presenter, manager: manager)
             return interactor
         }.inObjectScope(.transient)
@@ -34,8 +34,8 @@ class HomeAssembly: Assembly {
         container.register(HomeViewController.self) { (r, appRouter: IAppRouter) in
             let bundle = Bundle(for: type(of: self))
             let view = HomeViewController(nibName: "HomeViewController", bundle: bundle)
-            let interactor = r.resolve(IHomeInteractor.self, argument: view as IHomeViewController)
-            let wireframe = r.resolve(IHomeWireframe.self, argument: appRouter)
+            let interactor = r.resolve(IHomeInteractor.self, argument: view as IHomeViewController)!
+            let wireframe = r.resolve(IHomeWireframe.self, arguments: appRouter, view as HomeViewControllerDelegate)!
             view.interactor = interactor
             view.wireframe = wireframe
             return view

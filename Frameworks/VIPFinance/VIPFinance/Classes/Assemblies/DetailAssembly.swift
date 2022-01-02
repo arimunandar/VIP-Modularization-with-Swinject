@@ -20,8 +20,8 @@ class DetailAssembly: Assembly {
         }.inObjectScope(.transient)
 
         container.register(IDetailInteractor.self) { (r, view: IDetailViewController) in
-            let presenter = r.resolve(IDetailPresenter.self, argument: view)
-            let manager = r.resolve(IDetailManager.self)
+            let presenter = r.resolve(IDetailPresenter.self, argument: view)!
+            let manager = r.resolve(IDetailManager.self)!
             let interactor = DetailInteractor(presenter: presenter, manager: manager)
             return interactor
         }.inObjectScope(.transient)
@@ -34,11 +34,11 @@ class DetailAssembly: Assembly {
         container.register(DetailViewController.self) { (r, appRouter: IAppRouter, parameters: DetailModuleParameter?) in
             let bundle = Bundle(for: type(of: self))
             let view = DetailViewController(nibName: "DetailViewController", bundle: bundle)
-            let interactor = r.resolve(IDetailInteractor.self, argument: view as IDetailViewController)
-            let wireframe = r.resolve(IDetailWireframe.self, argument: appRouter)
+            let interactor = r.resolve(IDetailInteractor.self, argument: view as IDetailViewController)!
+            let wireframe = r.resolve(IDetailWireframe.self, argument: appRouter)!
             view.interactor = interactor
             view.wireframe = wireframe
-            interactor?.parameters = parameters
+            interactor.parameters = parameters
             return view
         }.inObjectScope(.transient)
     }

@@ -31,13 +31,13 @@ class DetailWireframe: IDetailWireframe {
     }
 
     func didPop() {
-        let x = HomeCallbackParameter(name: "OTONG", from: .fromTransaction)
+        let x = HomeCallbackParameter(name: "OTONG", from: .fromDetail)
         appRouter.popViewController(parameter: x)
     }
 
     func navigateToTransaction() {
-        appRouter.presentModule(module: VIPFinanceProducts.TransactionModule, onDismiss: { [weak self] parameter in
-            print("DETAIL DISMISS", parameter)
+        appRouter.presentModule(module: VIPFinanceProducts.TransactionModule, onDismiss: { _ in
+            // do someting
         })
     }
 }
